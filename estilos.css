@@ -453,7 +453,7 @@ a {
     .segmento-recetario img {
         object-fit: cover;
         width: auto;
-        max-width: 50rem;
+        max-width: 40rem;
         display: block;
         text-align: center;
 
@@ -461,5 +461,6 @@ a {
 
     .receta {
         border-left: none;
+        border-top: groove 4px #eb1889;
     }
 }
