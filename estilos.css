@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -8,12 +6,10 @@
     text-decoration: none;
     list-style: none;
 }
-
 * {
     scrollbar-width: thin;
     scrollbar-color: #eb1889;
 }
-
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: url(fondo.gif);
@@ -21,7 +17,7 @@ body {
     padding-bottom: 12rem;
     min-height: 100vh;
 }
-
+/* Estilos Barra de navegación, con transition en el cambio de @media*/
 nav {
     background: #eb1889;
     height: 80px;
@@ -89,7 +85,7 @@ nav li a:hover {
     }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 600px) {
     .checkbtn {
         display: block;
     }
@@ -127,6 +123,7 @@ nav li a:hover {
     }
 }
 
+/* Estilos IndexCaramba.html con animaci+ón slider @kayframes*/
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -202,7 +199,7 @@ nav li a:hover {
         margin-left: -200%;
     }
 }
-
+/* Estilos cotillon.html y juguetes.html con grid */
 details {
     background: #fff;
     border-radius: 4px;
@@ -266,7 +263,7 @@ summary:hover {
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
 }
 
-@media (max-width: 858px) {
+@media (max-width: 600px) {
 
     .grid_container,
     .wide,
@@ -276,32 +273,7 @@ summary:hover {
         grid-auto-rows: minmax(150px, auto);
     }
 }
-
-footer {
-    background-color: #eb1889;
-    text-align: center;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    padding: 1rem 0 2rem 0;
-    bottom: 0;
-}
-
-footer a {
-    color: #fff;
-    padding: 7px 13px;
-    font-size: 30px;
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 50px 50px 0px 100px;
-    margin-left: 0px;
-    align-content: center;
-}
-
+/* Estilos contacto.html */
 .ubicacion {
     min-width: 650px;
     height: auto;
@@ -311,15 +283,6 @@ footer a {
     padding: 20px 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
 }
-
-/*.formulario-contacto{
-    height: auto;
-    margin: 10px 0px 0 0px;
-    color: #eb1889;
-    padding: 20px 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, .6);    
-    z-index: -25;
-}*/
 
 .formulario {
     width: 650px;
@@ -438,7 +401,7 @@ a {
 }
 
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
     .segmento-recetario {
         flex-direction: column-reverse;
         justify-content: center;
@@ -463,4 +426,30 @@ a {
         border-left: none;
         border-top: groove 4px #eb1889;
     }
+}
+
+/* Estilos footer */
+footer {
+    background-color: #eb1889;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    padding: 1rem 0 2rem 0;
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    padding: 7px 13px;
+    font-size: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 50px 0px 100px;
+    margin-left: 0px;
+    align-content: center;
 }
