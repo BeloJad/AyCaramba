@@ -75,7 +75,7 @@ nav li a:hover {
     display: none;
 }
 
-@media (max-width: 952px) {
+@media screen and (max-width:768px) {
     .enlace {
         padding-left: 20px;
     }
@@ -85,7 +85,7 @@ nav li a:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width:480px) {
     .checkbtn {
         display: block;
     }
@@ -249,6 +249,8 @@ summary:hover {
     grid-auto-flow: dense;
     justify-content: center;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
 
 }
@@ -256,21 +258,27 @@ summary:hover {
 .wide {
     grid-column: span 2;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
+    background-size: cover;
+    background-position: center;    
 }
 
 .tall {
     grid-row: span 2;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
+    background-size: cover;
+    background-position: center;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width:480px) {
 
     .grid_container,
     .wide,
     .tall {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
-        grid-auto-rows: minmax(150px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(80px, 120px));
+        grid-auto-rows: minmax(120px, auto);
+        background-size: cover;
+        background-position: center;
     }
 }
 /* Estilos contacto.html */
@@ -348,12 +356,13 @@ hr {
     box-shadow: 2px 0 10px rgba(0, 0, 0, .3);
 }
 
+/* Estilos recetas.html */
 .recetario {
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .segmento-recetario {
@@ -367,15 +376,16 @@ hr {
 
 .segmento-recetario img {
     object-fit: cover;
-    width: auto;
-    max-width: 300px;
-    margin: 30px;
+    width: 25%;
+    height: 25%;
+    margin: 20px;
+    align-self: center;
 }
 
 .receta {
     border-left: groove 4px #eb1889;
-    max-width: 60rem;
-    margin: 30px;
+    width: 60%;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -400,31 +410,71 @@ a {
     font-size: 16px;
 }
 
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width:768px) {
+    .recetario {
+        margin-left: -10px;
+        width: 95%;
+    }
     .segmento-recetario {
         flex-direction: column-reverse;
         justify-content: center;
         align-content: center;
-        margin: 40px 0 0;
         display: flex;
-        flex-direction: row;
-        font-size: auto;
-        text-align: center;
+        flex-direction: row;        
     }
 
     .segmento-recetario img {
         object-fit: cover;
-        width: auto;
-        max-width: 40rem;
+        width: 40vw;
+        height: auto;
         display: block;
         text-align: center;
+        margin-bottom: 15px;
 
     }
 
     .receta {
         border-left: none;
         border-top: groove 4px #eb1889;
+        margin: 5px 2px 5px;
+        width:70vw;
+    }
+    .receta a {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .recetario {
+        margin-left: -10px;
+        width: 95%;
+    }
+    .segmento-recetario {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: row;        
+    }
+
+    .segmento-recetario img {
+        object-fit: cover;
+        width: 50vw;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+
+    .receta {
+        border-left: none;
+        border-top: groove 4px #eb1889;
+        margin: 5px 2px 5px;
+    }
+    .receta a {
+        margin-top: 15px;
+        text-align: center;
     }
 }
 
@@ -452,4 +502,14 @@ footer a {
     padding: 50px 50px 0px 100px;
     margin-left: 0px;
     align-content: center;
+}
+@media screen and (max-width:480px) {
+    footer{
+        font-size: 12px;
+    }
+    footer a {
+    color: #fff;
+    padding: 7px 13px;
+    font-size: 20px;
+    }
 }
