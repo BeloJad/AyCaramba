@@ -17,36 +17,31 @@ body {
     padding-bottom: 12rem;
     min-height: 100vh;
 }
-/* Estilos Barra de navegación, con transition en el cambio de @media*/
+
+/* Estilos Barra de navegación, con transition y @media*/
 nav {
     background: #eb1889;
     height: 80px;
     width: 100vw;
     box-shadow: 2px 0 20px rgba(0, 0, 0, .6);
 }
-
 .enlace {
     position: absolute;
     padding: 5px 50px;
 }
-
 .logo {
     height: 70px;
 
 }
-
 nav ul {
     float: right;
     margin-right: 20px;
 }
-
 nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-
 }
-
 nav ul li a {
     color: #fff;
     font-size: 18px;
@@ -54,13 +49,11 @@ nav ul li a {
     border-radius: 3px;
     font-family: 'Nunito', sans-serif;
 }
-
 nav li a:hover {
     background-color: #f66bb5;
     transition: .4s;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 }
-
 .checkbtn {
     font-size: 30px;
     color: #fff;
@@ -70,7 +63,6 @@ nav li a:hover {
     cursor: pointer;
     display: none;
 }
-
 #check {
     display: none;
 }
@@ -84,7 +76,6 @@ nav li a:hover {
         font-size: 16px;
     }
 }
-
 @media screen and (max-width:480px) {
     .checkbtn {
         display: block;
@@ -123,44 +114,35 @@ nav li a:hover {
     }
 }
 
-/* Estilos IndexCaramba.html con animaci+ón slider @kayframes*/
+/* Estilos IndexCaramba.html con animación slider @kayframes*/
 .contenedor {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100vw;
 }
-
 .content {
     height: auto;
     padding: 1rem;
 }
-
 .slider {
     width: 100%;
     margin: auto;
     overflow: hidden;
     z-index: -20;
     height: 100vh;
-
 }
-
 .slider ul {
     display: flex;
     padding: 0;
-    /*width: 400%;*/
     animation: cambio 10s infinite alternate;
     z-index: -20;
-
 }
-
 .slider li {
     width: 100vw;
     list-style: none;
     z-index: -20;
-
 }
-
 .slider img {
     width: 100vw;
     z-index: -20;
@@ -170,36 +152,30 @@ nav li a:hover {
     0% {
         margin-left: 0;
     }
-
     20% {
         margin-left: 0;
     }
-
     25% {
         margin-left: -100%;
     }
-
     45% {
         margin-left: -100%;
     }
-
     50% {
         margin-left: -200%;
     }
-
     70% {
         margin-left: -200%;
     }
-
     75% {
         margin-left: -300%;
     }
-
     100% {
         margin-left: -200%;
     }
 }
-/* Estilos cotillon.html y juguetes.html con grid */
+
+/* Estilos cotillon.html, recetas.html y juguetes.html con grid */
 details {
     background: #fff;
     border-radius: 4px;
@@ -210,7 +186,6 @@ details {
     font-size: 18px;
     width: 90vw;
 }
-
 summary {
     background: #eb1889;
     padding: 2rem;
@@ -218,13 +193,11 @@ summary {
     display: flex;
     font-family: 'Nunito', sans-serif;
 }
-
 summary:hover {
     background-color: #f66bb5;
     transition: .4s;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
 }
-
 .grid_item {
     display: flex;
     align-items: center;
@@ -237,7 +210,6 @@ summary:hover {
     object-fit: cover;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
 }
-
 .grid_container,
 .wide,
 .tall {
@@ -252,16 +224,13 @@ summary:hover {
     background-size: cover;
     background-position: center;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
-
 }
-
 .wide {
     grid-column: span 2;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;    
 }
-
 .tall {
     grid-row: span 2;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
@@ -270,7 +239,6 @@ summary:hover {
 }
 
 @media screen and (max-width:480px) {
-
     .grid_container,
     .wide,
     .tall {
@@ -281,9 +249,18 @@ summary:hover {
         background-position: center;
     }
 }
+
 /* Estilos contacto.html */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 50px 0px 100px;
+    margin-left: 0px;
+    align-content: center;
+}
 .ubicacion {
-    min-width: 650px;
+    width: 40vw;
     height: auto;
     background-color: #eb1889;
     margin: 10px 10px 10px 0px;
@@ -291,10 +268,11 @@ summary:hover {
     padding: 20px 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
 }
-
+.iframe {
+    width: 35vw;
+}
 .formulario {
-    width: 650px;
-    max-width: 100%;
+    width: 40vw;
     margin-top: 30px;
     padding: 20px;
     color: #eb1889;
@@ -303,15 +281,16 @@ summary:hover {
     padding: 20px 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .6);
     position: relative;
+    background: #fff;
+    z-index: 20;
 }
-
 .formulario-titulo,
 hr {
     text-align: center;
     margin-top: 0;
     color: #eb1889;
+    size: 2rem;
 }
-
 .formulario-input,
 .formulario-label,
 .formulario-submit {
@@ -320,7 +299,6 @@ hr {
     font-size: 1rem;
     color: #eb1889;
 }
-
 .formulario-input {
     padding: 20px;
     border: 1.5px solid rgba(222, 33, 165, 0.7);
@@ -329,15 +307,12 @@ hr {
     color: #d58cb3;
     padding-left: 80px;
 }
-
 .formulario-input:focus {
     outline: 2px solid rgba(222, 33, 165, 0.7);
 }
-
 .formulario-input:focus+.formulario-label {
     margin-top: -95px;
 }
-
 .formulario-label {
     padding-left: 15px;
     position: absolute;
@@ -346,7 +321,6 @@ hr {
     color: #eb1889;
     transition: all 0.2s;
 }
-
 .formulario-submit {
     background: #eb1889;
     color: #fff;
@@ -354,6 +328,78 @@ hr {
     cursor: pointer;
     border: none;
     box-shadow: 2px 0 10px rgba(0, 0, 0, .3);
+}
+@media screen and (max-width:480px) {
+    .flex-container{
+        padding: 2rem 2rem 0px;
+        transition: all 0.2s;
+    }
+    .ubicacion {
+        width: 80vw;
+        height: auto;
+        margin-left:-10;
+        transition: all 0.2s;
+    }
+    .iframe {
+        width: 70vw;
+        height: auto;
+        transition: all 0.2s;
+        
+    }
+    .formulario {
+        width: 80vw;
+        height: auto;
+        margin-left: -10;
+        transition: all 0.2s;
+    }
+    .formulario-input, .formulario-label, .formulario-submit {
+        font-size: 0.8rem;
+        transition: all 0.2s;
+    }
+    .formulario-titulo{
+        font-size: 1rem;
+        transition: all 0.2s;
+    }
+    #formulario-subtitulo{
+        font-size: 0.8rem;
+        transition: all 0.2s;
+    }
+}
+@media screen and (max-width:768px) {
+    .flex-container{
+        padding: 2rem 2rem 0px;
+        transition: all 0.2s;
+    }
+    .ubicacion {
+        width: 80vw;
+        height: auto;
+        margin-left:-10;
+        transition: all 0.2s;
+    }
+    .iframe {
+        width: 70vw;
+        height: auto;
+        transition: all 0.2s;
+        
+    }
+    .formulario {
+        width: 80vw;
+        height: auto;
+        margin-left: 0;
+        transition: all 0.2s;
+    }
+    .formulario-input, .formulario-label, .formulario-submit {
+        font-size: 1rem;
+        transition: all 0.2s;
+    }
+    .formulario-titulo{
+        font-size: 1.2rem;
+        transition: all 0.2s;
+    }
+    #formulario-subtitulo{
+        font-size: 1rem;
+        transition: all 0.2s;
+    }
 }
 
 /* Estilos recetas.html */
@@ -390,18 +436,15 @@ hr {
     flex-direction: column;
     justify-content: center;
 }
-
 .receta a {
     margin: 0 50px;
     font-family: 'Patrick Hand', cursive;
     font-size: 20px;
     color: #eb1889;
 }
-
 a {
     text-decoration: none;
 }
-
 #resumen-receta {
     color: #000;
     padding: 20px 50px;
@@ -422,7 +465,6 @@ a {
         display: flex;
         flex-direction: row;        
     }
-
     .segmento-recetario img {
         object-fit: cover;
         width: 40vw;
@@ -432,7 +474,6 @@ a {
         margin-bottom: 15px;
 
     }
-
     .receta {
         border-left: none;
         border-top: groove 4px #eb1889;
@@ -457,16 +498,13 @@ a {
         display: flex;
         flex-direction: row;        
     }
-
     .segmento-recetario img {
         object-fit: cover;
         width: 50vw;
         display: block;
         text-align: center;
         margin-bottom: 15px;
-
     }
-
     .receta {
         border-left: none;
         border-top: groove 4px #eb1889;
@@ -495,14 +533,6 @@ footer a {
     font-size: 30px;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 50px 50px 0px 100px;
-    margin-left: 0px;
-    align-content: center;
-}
 @media screen and (max-width:480px) {
     footer{
         font-size: 12px;
