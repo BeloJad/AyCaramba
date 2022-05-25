@@ -100,7 +100,7 @@ nav li a:hover {
     }
 
     nav ul li a {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     li a:hover,
@@ -130,7 +130,7 @@ nav li a:hover {
     margin: auto;
     overflow: hidden;
     z-index: -20;
-    height: 100vh;
+    height: auto;
 }
 .slider ul {
     display: flex;
@@ -239,6 +239,13 @@ summary:hover {
 }
 
 @media screen and (max-width:480px) {
+    details{
+        margin: 1rem;
+    }
+    summary{
+        padding: 1.2rem;
+        margin-left: 0;
+}
     .grid_container,
     .wide,
     .tall {
