@@ -15,13 +15,12 @@ function validaNombre (){
 function validaTelefono (){
     var elemento = document.getElementById ("telefono");
     if (elemento.value =="") {
-        alert("Ingrese número");
+        alert("Ingrese número telefónico");
         return false;
     } if (isNaN(elemento.value)){
-        alert("Debe ingresar un NUMERO");
+        alert("Debe ingresar un NUMERO telefónico");
         return false;
     }
-    
     return true;
 }
 
