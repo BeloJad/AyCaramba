@@ -90,6 +90,7 @@ nav li a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 21;
     }
 
     nav ul li {
@@ -122,7 +123,7 @@ nav li a:hover {
     width: 100vw;
 }
 .content {
-    height: auto;
+    height: 100vh;
     padding: 1rem;
 }
 .slider {
