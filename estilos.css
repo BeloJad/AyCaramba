@@ -241,6 +241,7 @@ summary:hover {
 @media screen and (max-width:480px) {
     details{
         margin: 1rem;
+        margin-bottom: 2rem;
     }
     summary{
         padding: 1.2rem;
@@ -484,7 +485,7 @@ a {
     .receta {
         border-left: none;
         border-top: groove 4px #eb1889;
-        margin: 5px 2px 5px;
+        margin: 5px 1px 5px;
         width:70vw;
     }
     .receta a {
@@ -504,6 +505,9 @@ a {
         align-content: center;
         display: flex;
         flex-direction: row;        
+    }
+    #resumen-receta{
+        padding: 20px 0px;
     }
     .segmento-recetario img {
         object-fit: cover;
